@@ -11,7 +11,7 @@ weight = zeros(1,2);
 intercept = 0;
 k = 0;
 yita = 0.1;
-R2 = max(trainData(:,1).^2 + trainData(:,2).^2 + trainData(:,3).^2);
+R2 = max(trainData(:,1).^2 + trainData(:,2).^2);
 
 figure
 hold on

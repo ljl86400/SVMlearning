@@ -30,6 +30,7 @@ trainData = [randXForTrain,randYForTrain,lable];
 figure
 hold on
 grid on
+h = fimplicit(@(x,y) gradient*x - y + intercept,[0,10]);
 scatter(randXForTrain(isPositive < 0),randYForTrain(isPositive < 0))
 scatter(randXForTrain(isPositive > 0),randYForTrain(isPositive > 0))
 hold off
